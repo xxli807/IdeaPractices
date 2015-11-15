@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AddSubtractMultiplyDivideFractions.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,17 +7,25 @@ using System.Threading.Tasks;
 
 namespace AddSubtractMultiplyDivideFractions
 {
-    public class Class1
-    {
-    }
+    
 
 
 
     public class Fraction
     {
+         
         private int numberator;
         private int denominator;
+       
+        public Fraction(int numerator, int denominator)
+        {
+            this.numberator = numerator;
+            this.denominator = denominator;
+        }
 
+        public Fraction()
+        {
+        }
 
         public int Numerator
         {
@@ -30,8 +39,7 @@ namespace AddSubtractMultiplyDivideFractions
             set { this.denominator = value; }
         }
 
-
-
-
+       
+         
     }
 }
