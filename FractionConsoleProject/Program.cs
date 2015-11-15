@@ -13,8 +13,7 @@ namespace FractionConsoleProject
     {        
         private static IOperation _operation;
         private static Fraction firstFraction;
-        private static Fraction secondFraction;
-        private Fraction newFraction;
+        private static Fraction secondFraction; 
         private static string operation;
 
         static void Main(string[] args)
@@ -30,18 +29,14 @@ namespace FractionConsoleProject
 
                 GetSecondInput();
 
-                while(Calculation() != 0)
+                while(Calculation())
                 {
                     GetSecondInput();                 
                 }
 
                 //exist
                 Console.ReadKey();
-            }
-
-
-
-
+            } 
 
         }
 
@@ -94,7 +89,7 @@ namespace FractionConsoleProject
             secondFraction = new Fraction(int.Parse(numerator), int.Parse(denominator));
         }
 
-        public static decimal Calculation()
+        public static bool Calculation()
         {
             decimal result=0;
             switch (operation)
@@ -116,7 +111,7 @@ namespace FractionConsoleProject
             firstFraction = _operation.GetNewFraction();
             Console.WriteLine("new fraction is: "+ firstFraction.Numerator + "  " +firstFraction.Denominator);
             Console.WriteLine("result is: " + result.ToString("0.00"));
-            return result;
+            return true;
         }
 
 

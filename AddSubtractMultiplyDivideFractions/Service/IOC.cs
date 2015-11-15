@@ -14,11 +14,7 @@ namespace AddSubtractMultiplyDivideFractions.Service
 
         public static void InitDI()
         {
-
-
             standKernel.Bind<IOperation>().To<OperationService>();
-
-
         }
 
 

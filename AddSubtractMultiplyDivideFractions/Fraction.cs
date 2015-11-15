@@ -7,10 +7,7 @@ using System.Threading.Tasks;
 
 namespace AddSubtractMultiplyDivideFractions
 {
-    
-
-
-
+     
     public class Fraction
     {
          
