@@ -20,7 +20,7 @@ namespace FractionConsoleProject
         {
             while (true)
             {
-                //register all the interface
+                //register all the interface 
                 IOC.InitDI();
                 _operation = IOC.GetStandardKernel().Get<IOperation>();
 
