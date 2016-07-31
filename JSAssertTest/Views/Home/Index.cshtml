@@ -14,9 +14,35 @@
     }
 </style>
  
-<div id="notify">
-    asddddddddddd
+ 
+
+
+<div>
+    <ul>
+        <li id="linkA"><a>link A</a></li>
+        <li id="linkB"><a>link B</a></li>
+    </ul>
+
 </div>
+
+<script type="text/javascript">
+
+    $("#linkA").on("mouseenter", function () {
+        debugger;
+        console.log("A mouse enter")
+    });
+
+    $("#linkB").on("mouseenter", function () {
+        debugger;
+        console.log("B mouse enter")
+    });
+
+
+</script>
+
+
+
+
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
